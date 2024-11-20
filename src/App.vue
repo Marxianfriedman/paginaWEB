@@ -1,7 +1,11 @@
 <template>
   <div id="app">
-    <HeadComponent/>
+    <div class="header-styles">
+      <HeadComponent/>
+    </div>
+    <div class="espaciado">
     <ComponenteCarrusel1/>
+    </div>
     <ComponenteCarrusel2/>
     <ComponenteCarrusel3/>
 
@@ -76,6 +80,18 @@ export default {
   background-size: cover;
   min-height: 100vh;
   min-width: 100%;
+}
+
+.header-styles {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+} 
+
+.espaciado {
+  margin-top: 100px;
 }
 
 .footer {
