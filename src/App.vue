@@ -3,6 +3,7 @@
     <div class="header-styles">
       <HeadComponent/>
     </div>
+    <ComponentePortada/>
     <ComponenteCarrusel1/>
     <ComponenteCarrusel2/>
     <ComponenteCarrusel3/>
@@ -57,7 +58,7 @@ import HeadComponent from './components/HeadComponent.vue';
 import ComponenteCarrusel1 from './components/ComponenteCarrusel1.vue';
 import ComponenteCarrusel2 from './components/ComponenteCarrusel2.vue';
 import ComponenteCarrusel3 from './components/ComponenteCarrusel3.vue';
-
+import ComponentePortada from './components/ComponentePortada.vue';
 export default {
   name: 'App',
   components: {
@@ -65,6 +66,7 @@ export default {
     ComponenteCarrusel1,
     ComponenteCarrusel2,
     ComponenteCarrusel3,
+    ComponentePortada,
   }
 };
 </script>

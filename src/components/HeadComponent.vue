@@ -13,7 +13,7 @@ export default {
 
 <style scoped>
 .main-container {
-  background: #76018E;
+  background: linear-gradient(to bottom, #7e0b28, rgb(89, 0, 255));
   color: #FFE25E;
   padding: 1rem;
   text-align: center;
