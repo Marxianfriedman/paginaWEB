@@ -8,7 +8,7 @@
           </div>
           <div class="text-container">
             <h5><strong>{{ producto.title }}</strong></h5>
-            <strong><em>Descripcion:</em></strong> 
+            <strong><em>Descripcion:</em></strong> <p>{{ producto.description }}</p> 
             <p>{{ producto.price }}</p>
           </div>
           <a 
@@ -46,7 +46,7 @@
     computed: {
     telefono() {
       // Número de WhatsApp (modificar según tu necesidad, debe estar en formato internacional)
-      return '573102775697'; 
+      return '573115447247'; 
     },
     mensaje() {
       // Mensaje personalizado con información del producto
@@ -78,9 +78,10 @@
   background: linear-gradient(45deg, rgb(255, 0, 119), rgb(255, 123, 0), rgb(255, 4, 192));
   border-radius: 10px;
   padding: 20px;
-  width: 90%; /* Base para dispositivos pequeños */
+  width: 80%; /* Base para dispositivos pequeños */
   max-width: 600px; /* Ancho máximo */
   height: 70%;
+  max-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,11 +114,12 @@
   align-items: center;
   gap: 10px;
   width: 100%;
+  height: 100%;
 }
 
 .image-container {
   width: 100%;
-
+  height: 70%;
   background: #f5f5f5; /* Fondo en caso de imágenes con bordes transparentes */
   display: flex;
   justify-content: center;
@@ -130,6 +132,11 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: cover; /* Asegura que la imagen mantenga proporción sin deformarse */
+}
+
+h5 {
+  color: rgb(255, 255, 255);
+  background: linear-gradient(90deg, rgba(255, 0, 0, 0), rgba(0, 0, 255, 0.534), rgba(241, 92, 6, 0));
 }
 
 .text-container {

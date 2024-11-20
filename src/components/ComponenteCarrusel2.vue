@@ -86,14 +86,14 @@
       const grupos = ref([]);
   
       const productos = [
-        { img: LoroImg, alt: "Producto 1", title: "Producto 1", price: "$100.00" },
-        { img: gettyimage, alt: "Producto 2", title: "Producto 2", price: "$120.00" },
-        { img: camiseta, alt: "Producto 3", title: "Producto 3", price: "$150.00" },
-        { img: chaqueta, alt: "Producto 4", title: "Producto 4", price: "$200.00" },
-        { img: chaqueta2, alt: "Producto 5", title: "Producto 5", price: "$110.00" },
-        { img: collar, alt: "Producto 6", title: "Producto 6", price: "$130.00" },
-        { img: collar2, alt: "Producto 7", title: "Producto 7", price: "$170.00" },
-        { img: gorreon, alt: "Producto 8", title: "Producto 8", price: "$210.00" },
+      { img: LoroImg, alt: "Producto 1", title: "Producto 1", price: "$100.00", descripcion: "Descripción del producto 1" },
+            { img: gettyimage, alt: "Producto 2", title: "Producto 2", price: "$120.00", description: "Descripcion del producto 2" },
+            { img: camiseta, alt: "Producto 3", title: "Producto 3", price: "$150.00", description: "Descripcion del producto 3" },
+            { img: chaqueta, alt: "Producto 4", title: "Producto 4", price: "$200.00", description: "Descripcion del producto 4" },
+            { img: chaqueta2, alt: "Producto 5", title: "Producto 5", price: "$110.00", description: "Descripcion del producto 5" },
+            { img: collar, alt: "Producto 6", title: "Producto 6", price: "$130.00", description: "Descripcion del producto 6" },
+            { img: collar2, alt: "Producto 7", title: "Producto 7", price: "$170.00", description: "Descripcion del producto 7" },
+            { img: gorreon, alt: "Producto 8", title: "Producto 8", price: "$210.00", description: "Descripcion del producto 8" },
       ];
   
       let carouselInstance = null;
@@ -171,7 +171,12 @@
   </script>
   
   <style scoped>
+  * {
+    font-family: "Merienda", cursive;
+  }
+
   h2 {
+    font-family: "Merienda", cursive;
     background: linear-gradient(45deg, red, blue, green);
     color: white;
     border-radius: 10px;

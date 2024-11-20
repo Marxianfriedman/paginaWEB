@@ -3,9 +3,7 @@
     <div class="header-styles">
       <HeadComponent/>
     </div>
-    <div class="espaciado">
     <ComponenteCarrusel1/>
-    </div>
     <ComponenteCarrusel2/>
     <ComponenteCarrusel3/>
 
@@ -36,12 +34,12 @@
             </li>
             <li>
               <a href="#" target="_blank">
-                <img src="./assets/Iconos de contacto/Instagram_logo_2022.svg.png" alt=""> Twitter
+                <img src="./assets/Iconos de contacto/Instagram_logo_2022.svg.png" alt=""> Instagram
               </a>
             </li>
             <li>
               <a href="#" target="_blank">
-                <img src="./assets/Iconos de contacto/WhatsApp.svg.png" alt=""> Instagram
+                <img src="./assets/Iconos de contacto/WhatsApp.svg.png" alt=""> WhatsApp
               </a>
             </li>
           </ul>
@@ -74,25 +72,24 @@ export default {
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  background-image: url('./assets/joseph-corl-wMmvLlXZ1Vg-unsplash.jpg');
+  background-image: url('./assets/pexels-jarno-van-loon-1581197-3039150.jpg');
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
   min-width: 100%;
 }
+ * {
+    font-family: "Merienda", cursive;
+ }
 
 .header-styles {
   position: sticky;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 } 
-
-.espaciado {
-  margin-top: 100px;
-}
 
 .footer {
   background-color: #333;
@@ -149,6 +146,10 @@ export default {
 .social-links img {
   height: 25px;
   width: 25px;
+}
+
+li {
+  margin-top: 40px 0;
 }
 
 </style>
