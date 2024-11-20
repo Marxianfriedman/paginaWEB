@@ -13,18 +13,20 @@ export default {
 
 <style scoped>
 .main-container {
-  background: black;
-  color: white;
+  background: #76018E;
+  color: #FFE25E;
   padding: 1rem;
   text-align: center;
 }
 
 h1 {
   font-family: "Merienda", cursive;
+  text-shadow: -1px -1px 0 #00000077, 1px -1px 0 #000000a9, -1px 1px 0 #000000a9, 1px 1px 0 #000000a9;
 }
 
 h2 {
   font-family: "Bangers", system-ui;
+  text-shadow: -1px -1px 0 #00000077, 1px -1px 0 #000000a9, -1px 1px 0 #000000a9, 1px 1px 0 #000000a9;
 }
 
 </style>
